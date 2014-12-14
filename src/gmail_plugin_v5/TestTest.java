@@ -16,14 +16,7 @@ public class TestTest {
 		
 		lab.Recvice[lab.count][1]=10;
 		
-		lab.count=1;
-		lab.select[1][0]=120;
-		lab.select[2][0]=5;
-		lab.select[2][1]=10;
-		lab.select[3][0]=105;
-		lab.select[4][0]=105;
-		lab.select[5][0]=105;
-		lab.select[6][0]=105;
+
 		lab.select[7][0]=105;
 		lab.select[8][0]=105;
 		lab.select[9][0]=10;
