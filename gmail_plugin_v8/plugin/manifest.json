@@ -1,0 +1,18 @@
+﻿{
+"name": "Gmail Extension",
+"version": "1.0",
+"manifest_version": 2,
+"description": "Add attchment to Gmail.",
+"icons": { 
+			"16": "gmail16.png",
+			"48": "gmail48.png",
+			"128": "gmail128.png" 
+},
+"permissions": ["http://gmailplugin.duapp.com/*"],
+"options_page": "option.html",
+"browser_action": {
+"default_icon": "gmail48.png",
+ "default_title": "Gmail",
+"default_popup": "popup.html"
+}
+}
