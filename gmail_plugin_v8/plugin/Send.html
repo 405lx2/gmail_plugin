@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="jquery.js"></script>
+</head>
+<body>
+	<form method="post" action="send" enctype="multipart/form-data">
+		<p>请输入</p>
+		<p>目标</p>
+		<input type="text" name="address"><br>
+		<p>主题</p>
+		<input type="text" name="subject"><br>
+		<textarea name="text" cols=30 rows=10>what do you want to do</textarea>
+		<br> <input type="hidden" name="filesize" id="filesize" value="hh"><br>
+		<input type=file id=attchment name=attchment>
+		<script>
+			var control = document.getElementById("attchment");
+			control.addEventListener("change", function(event) {
+			    alert("fuck");
+			    document.getElementById("filesize").value=this.files[0].size;
+			    alert(document.getElementById("filesize").value);
+			    alert("fuck");
+			}, false);
+		</script>
+		<br> <input type="reset" value="重填"> <input type="submit"
+			value="查询">
+	</form>
+</body>
+</html>
